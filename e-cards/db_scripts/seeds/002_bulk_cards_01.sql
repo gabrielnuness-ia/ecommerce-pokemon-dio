@@ -1,0 +1,22 @@
+INSERT INTO tbl_cards (hp, name, type_id, stage_id, info, attack, damage, weak, resist, retreat, cardNumberInCollection, collection_id)
+VALUES 
+(60, 'Charmeleon', 1, 2, 'Flame burns hotter than usual when it gets angry.', 'Flamethrower', '50', 'Water x2', 'None', 2, 5, 1),
+(40, 'Squirtle', 2, 1, 'Shoots water at prey while in the water.', 'Bubble', '20', 'Electric x2', 'None', 1, 7, 1),
+(50, 'Machop', 6, 1, 'Its whole body is composed of muscles.', 'Karate Chop', '30', 'Psychic x2', 'None', 2, 52, 1),
+(70, 'Zapdos', 4, 1, 'A legendary bird that is said to appear when the sky turns dark.', 'Thunderbolt', '100', 'Rock x2', 'Fighting -20', 3, 15, 1),
+(50, 'Jigglypuff', 7, 1, 'Sings a soothing melody to lull foes.', 'Sing', '10', 'Steel x2', 'None', 1, 39, 2),
+(80, 'Gengar', 5, 2, 'Hides in the shadows to steal the life force of its prey.', 'Shadow Ball', '70', 'Darkness x2', 'Fighting -20', 3, 23, 2),
+(60, 'Eevee', 7, 1, 'Can evolve into multiple forms based on its environment.', 'Tackle', '20', 'Fighting x2', 'None', 1, 10, 2),
+(100, 'Snorlax', 7, 1, 'Eats and sleeps all day long.', 'Body Slam', '50', 'Fighting x2', 'None', 4, 5, 3),
+(70, 'Dragonite', 1, 2, 'An extremely rare and highly intelligent Pokémon.', 'Hyper Beam', '90', 'Ice x2', 'Fire -20', 3, 18, 3),
+(50, 'Pidgey', 7, 1, 'A common sight in forests and woods.', 'Gust', '10', 'Electric x2', 'None', 1, 12, 1),
+(40, 'Rattata', 7, 1, 'Very cautious. Will chew on anything with its fangs.', 'Bite', '20', 'Fighting x2', 'None', 1, 14, 1),
+(70, 'Ivysaur', 3, 2, 'The bud on its back blooms as it absorbs sunlight.', 'Vine Whip', '40', 'Fire x2', 'Water -20', 2, 3, 1),
+(60, 'Geodude', 6, 1, 'Often mistaken for a rock.', 'Rock Throw', '30', 'Water x2', 'Electric -20', 2, 32, 1),
+(90, 'Blastoise', 2, 2, 'Launches pressurized water from its cannons.', 'Hydro Pump', '80', 'Electric x2', 'None', 3, 2, 1),
+(50, 'Abra', 5, 1, 'It sleeps 18 hours a day using psychic powers to evade danger.', 'Psyshock', '30', 'Darkness x2', 'None', 1, 63, 2),
+(110, 'Steelix', 8, 2, 'Its body is harder than any metal.', 'Iron Tail', '100', 'Fighting x2', 'Psychic -20', 5, 12, 3),
+(80, 'Lucario', 6, 2, 'Reads the mind of opponents using aura.', 'Aura Sphere', '60', 'Psychic x2', 'Darkness -20', 2, 40, 3),
+(70, 'Chikorita', 3, 1, 'Uses its leaf to sense the temperature.', 'Razor Leaf', '30', 'Fire x2', 'Water -20', 1, 1, 2),
+(50, 'Torchic', 1, 1, 'Can launch fireballs at foes.', 'Flamethrower', '40', 'Water x2', 'Grass -20', 1, 4, 2),
+(80, 'Gardevoir', 5, 2, 'Protects its trainer with a mysterious power.', 'Psychic', '80', 'Darkness x2', 'None', 2, 10, 3);

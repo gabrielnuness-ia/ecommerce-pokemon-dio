@@ -1,0 +1,38 @@
+-- Create a table for storing card types
+CREATE TABLE tbl_collections (
+    id SERIAL PRIMARY KEY,
+    collectionSetName VARCHAR(100) NOT NULL, -- Collection names are typically short.
+    releaseDate DATE NOT NULL,
+    totalCardsInCollection SMALLINT NOT NULL -- Total cards are usually a small number.
+);
+
+CREATE TABLE tbl_types (
+    id SERIAL PRIMARY KEY,
+    typeName VARCHAR(50) NOT NULL -- Type names are concise, e.g., "Fire", "Water", "Electric".
+);
+
+-- Create a table for storing card stages
+CREATE TABLE tbl_stages (
+    id SERIAL PRIMARY KEY,
+    stageName VARCHAR(50) NOT NULL -- Stages are short, e.g., "Basic", "Stage 1", "Stage 2".
+);
+
+-- Update tbl_cards to link to tbl_types and tbl_stages
+CREATE TABLE tbl_cards (
+    id SERIAL PRIMARY KEY,
+    hp SMALLINT,
+    name VARCHAR(100) NOT NULL,
+    type_id INT NOT NULL, -- Links to tbl_types
+    stage_id INT NOT NULL, -- Links to tbl_stages
+    info TEXT,
+    attack VARCHAR(50),
+    damage VARCHAR(20),
+    weak VARCHAR(20),
+    resist VARCHAR(20),
+    retreat SMALLINT,
+    cardNumberInCollection SMALLINT NOT NULL,
+    collection_id INT NOT NULL,
+    CONSTRAINT fk_collection FOREIGN KEY (collection_id) REFERENCES tbl_collections(id),
+    CONSTRAINT fk_type FOREIGN KEY (type_id) REFERENCES tbl_types(id),
+    CONSTRAINT fk_stage FOREIGN KEY (stage_id) REFERENCES tbl_stages(id)
+);
